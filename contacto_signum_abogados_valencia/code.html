@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contacto - Signum Abogados</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-tint": "#525f71",
+                      "on-secondary": "#ffffff",
+                      "tertiary": "#000000",
+                      "on-surface": "#1c1c18",
+                      "surface-container": "#f1ede7",
+                      "outline-variant": "#c4c6cc",
+                      "inverse-on-surface": "#f4f0ea",
+                      "surface-container-lowest": "#ffffff",
+                      "on-background": "#1c1c18",
+                      "surface-dim": "#ddd9d4",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-container": "#785d00",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#e6e2dc",
+                      "outline": "#74777d",
+                      "primary-container": "#0f1c2c",
+                      "on-primary-container": "#778598",
+                      "inverse-primary": "#bac8dc",
+                      "tertiary-fixed-dim": "#b3c8e3",
+                      "surface": "#fdf9f3",
+                      "background": "#fdf9f3",
+                      "on-secondary-fixed-variant": "#584400",
+                      "surface-container-high": "#ebe8e2",
+                      "secondary": "#755b00",
+                      "secondary-container": "#fed977",
+                      "surface-container-low": "#f7f3ed",
+                      "inverse-surface": "#31302d",
+                      "secondary-fixed": "#ffe08f",
+                      "on-primary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "tertiary-container": "#051d31",
+                      "on-tertiary-container": "#71869e",
+                      "on-primary-fixed-variant": "#3a4859",
+                      "surface-container-highest": "#e6e2dc",
+                      "primary-fixed-dim": "#bac8dc",
+                      "on-tertiary-fixed-variant": "#34485f",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed-dim": "#e6c364",
+                      "on-error-container": "#93000a",
+                      "primary-fixed": "#d6e4f9",
+                      "on-secondary-fixed": "#241a00",
+                      "tertiary-fixed": "#d0e4ff",
+                      "surface-bright": "#fdf9f3",
+                      "on-primary-fixed": "#0f1c2c",
+                      "on-tertiary-fixed": "#051d31",
+                      "on-surface-variant": "#44474c",
+                      "primary": "#000000"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1440px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "80px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "DM Sans"
+                      ],
+                      "body-sm": [
+                              "DM Sans"
+                      ],
+                      "body-lg": [
+                              "DM Sans"
+                      ],
+                      "body-md": [
+                              "DM Sans"
+                      ],
+                      "headline-sm": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "300"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Subtle noise overlay for texture */
+        .noise-bg {
+            position: relative;
+        }
+        .noise-bg::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-primary-container/90 backdrop-blur-md border-b border-secondary/30">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-display-lg text-headline-sm text-primary dark:text-tertiary-fixed tracking-tight hover:opacity-80 transition-all duration-300" href="/signum_abogados_home/code.html">
+                Signum Abogados
+            </a>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-body-md text-body-md text-on-surface dark:text-on-surface-variant hover:text-secondary hover:opacity-80 transition-all duration-300" href="/servicios_jur_dicos_signum_abogados/code.html">Services</a>
+<a class="font-body-md text-body-md text-on-surface dark:text-on-surface-variant hover:text-secondary hover:opacity-80 transition-all duration-300" href="/nuestro_equipo_signum_abogados/code.html">Team</a>
+<a class="font-body-md text-body-md text-on-surface dark:text-on-surface-variant hover:text-secondary hover:opacity-80 transition-all duration-300" href="/casos_de_xito_signum_abogados/code.html">Success</a>
+<a class="font-body-md text-body-md text-on-surface dark:text-on-surface-variant hover:text-secondary hover:opacity-80 transition-all duration-300" href="/blog_jur_dico_signum_abogados/code.html">Blog</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary hover:opacity-80 transition-all duration-300 pb-1" href="/contacto_signum_abogados_valencia/code.html">Contact</a>
+</nav>
+<!-- Trailing Actions -->
+<div class="hidden lg:flex items-center gap-4">
+<a class="font-label-caps text-label-caps border border-secondary text-secondary rounded-full px-6 py-2 hover:opacity-80 transition-all duration-300 scale-98 hover:scale-100 flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">call</span>
+                    Call
+                </a>
+<a class="font-label-caps text-label-caps bg-primary text-on-primary rounded-full px-6 py-2 hover:opacity-80 transition-all duration-300 scale-98 hover:scale-100 flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                    WhatsApp
+                </a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="pt-[88px] min-h-screen">
+<!-- Hero Section -->
+<section class="bg-primary-container text-on-primary relative noise-bg">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 md:py-40 text-center relative z-10">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6 max-w-4xl mx-auto text-on-primary">
+                    Hablemos de tu caso
+                </h1>
+<p class="font-body-lg text-body-lg text-inverse-primary max-w-2xl mx-auto opacity-90">
+                    Nuestros especialistas evaluarán su situación de forma confidencial. Respuesta garantizada en menos de 2 horas.
+                </p>
+</div>
+</section>
+<!-- Contact Methods (Bento Grid) -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop -mt-16 md:-mt-24 relative z-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1: Phone -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/30 flex flex-col items-center text-center shadow-sm hover:-translate-y-1 transition-transform duration-300 noise-bg">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined text-[32px]">phone_in_talk</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Atención Telefónica</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                        Para urgencias y consultas directas con un socio director.
+                    </p>
+<a class="font-label-caps text-label-caps text-secondary font-bold tracking-widest hover:opacity-80 transition-opacity" href="tel:+34900123456">
+                        +34 900 123 456
+                    </a>
+</div>
+<!-- Card 2: WhatsApp -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/30 flex flex-col items-center text-center shadow-sm hover:-translate-y-1 transition-transform duration-300 noise-bg">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined text-[32px]">forum</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Mensajería Segura</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                        Contacto ágil y cifrado de extremo a extremo para documentación inicial.
+                    </p>
+<a class="font-label-caps text-label-caps text-secondary font-bold tracking-widest hover:opacity-80 transition-opacity" href="#">
+                        INICIAR CHAT PRIVADO
+                    </a>
+</div>
+<!-- Card 3: Visit -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/30 flex flex-col items-center text-center shadow-sm hover:-translate-y-1 transition-transform duration-300 noise-bg">
+<div class="w-16 h-16 rounded-full bg-surface-container-low flex items-center justify-center mb-6 text-secondary">
+<span class="material-symbols-outlined text-[32px]">location_on</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Sede Central</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                        Atención presencial bajo estricta cita previa para garantizar discreción.
+                    </p>
+<span class="font-label-caps text-label-caps text-secondary font-bold tracking-widest">
+                        C/ PIZARRO 12, VALENCIA
+                    </span>
+</div>
+</div>
+</section>
+<!-- Form & Info Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-24 md:py-32">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter items-start">
+<!-- Left Column: Form -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-8 md:p-12 border border-outline-variant/30 shadow-sm noise-bg">
+<div class="mb-10">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4">Solicitud de Estudio Previo</h2>
+<div class="w-12 h-px bg-secondary mb-6"></div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Complete el siguiente formulario. La información proporcionada está amparada por el secreto profesional desde este mismo instante.
+                        </p>
+</div>
+<form action="#" class="space-y-6" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Name -->
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface" for="name">Nombre y Apellidos *</label>
+<input class="w-full bg-surface-dim rounded px-4 py-3 border-b-2 border-transparent focus:border-secondary focus:outline-none focus:ring-0 font-body-md text-body-md text-on-surface transition-colors placeholder:text-on-surface-variant/50" id="name" name="name" placeholder="Su nombre completo" required="" type="text"/>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface" for="email">Correo Electrónico *</label>
+<input class="w-full bg-surface-dim rounded px-4 py-3 border-b-2 border-transparent focus:border-secondary focus:outline-none focus:ring-0 font-body-md text-body-md text-on-surface transition-colors placeholder:text-on-surface-variant/50" id="email" name="email" placeholder="contacto@empresa.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Phone -->
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface" for="tel">Teléfono de Contacto</label>
+<input class="w-full bg-surface-dim rounded px-4 py-3 border-b-2 border-transparent focus:border-secondary focus:outline-none focus:ring-0 font-body-md text-body-md text-on-surface transition-colors placeholder:text-on-surface-variant/50" id="tel" name="tel" placeholder="+34 ..." type="tel"/>
+</div>
+<!-- Type of Case -->
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface" for="case_type">Área Legal *</label>
+<select class="w-full bg-surface-dim rounded px-4 py-3 border-b-2 border-transparent focus:border-secondary focus:outline-none focus:ring-0 font-body-md text-body-md text-on-surface transition-colors appearance-none cursor-pointer" id="case_type" name="case_type" required="">
+<option disabled="" selected="" value="">Seleccione el área de práctica</option>
+<option value="corporate">Derecho Corporativo y M&amp;A</option>
+<option value="tax">Fiscalidad y Patrimonio</option>
+<option value="litigation">Litigación Compleja</option>
+<option value="real_estate">Real Estate &amp; Inversión</option>
+<option value="other">Otro / No estoy seguro</option>
+</select>
+</div>
+</div>
+<!-- Description -->
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface" for="description">Breve descripción del asunto *</label>
+<textarea class="w-full bg-surface-dim rounded px-4 py-3 border-b-2 border-transparent focus:border-secondary focus:outline-none focus:ring-0 font-body-md text-body-md text-on-surface transition-colors placeholder:text-on-surface-variant/50 resize-none" id="description" name="description" placeholder="Describa brevemente la situación..." required="" rows="5"></textarea>
+</div>
+<!-- GDPR Checkbox -->
+<div class="flex items-start gap-3 mt-4">
+<div class="flex items-center h-6">
+<input class="w-5 h-5 rounded border-outline-variant text-secondary focus:ring-secondary focus:ring-offset-surface bg-surface-dim cursor-pointer" id="gdpr" name="gdpr" required="" type="checkbox"/>
+</div>
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer" for="gdpr">
+                                He leído y acepto la <a class="text-secondary underline hover:opacity-80" href="#">Política de Privacidad</a>. Consiento el tratamiento de mis datos para la gestión de esta consulta bajo la normativa RGPD vigente.
+                            </label>
+</div>
+<!-- Submit -->
+<div class="pt-6">
+<button class="font-label-caps text-label-caps bg-primary text-on-primary rounded-full px-10 py-4 hover:opacity-90 transition-opacity duration-300 tracking-widest shadow-sm scale-98 hover:scale-100 w-full md:w-auto" type="submit">
+                                SOLICITAR EVALUACIÓN
+                            </button>
+</div>
+</form>
+</div>
+<!-- Right Column: Sticky Info -->
+<div class="lg:col-span-4 lg:sticky lg:top-32 space-y-8">
+<div class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/30 noise-bg">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-[24px] text-secondary">security</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Confidencialidad</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-0">
+                            Desde el momento en que se pone en contacto con nuestra firma, aplicamos los más estrictos protocolos de secreto profesional y encriptación de datos, garantizando absoluta discreción para su patrimonio y empresa.
+                        </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-8 border border-outline-variant/30 noise-bg">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-[24px] text-secondary">schedule</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Horario de Despacho</h3>
+</div>
+<ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
+<li class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span>Lunes - Jueves</span>
+<span>09:00 - 19:00</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span>Viernes</span>
+<span>09:00 - 15:00</span>
+</li>
+<li class="flex justify-between pt-2">
+<span class="text-on-surface">Urgencias</span>
+<span class="text-secondary font-bold">24/7 (Clientes)</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Full Width Map Embed Placeholder -->
+<section class="w-full h-[500px] bg-surface-dim relative border-t border-outline-variant/20">
+<div class="absolute inset-0 w-full h-full bg-cover bg-center" data-alt="A highly detailed, cinematic aerial view of an upscale European city street, specifically tailored to represent a luxury business district in Valencia, Spain. The scene is bathed in warm, late afternoon golden hour light, casting elegant long shadows across pristine, classical architecture. The mood is sophisticated, established, and quietly authoritative, perfectly aligning with a premium legal brand's minimal and glassmorphic aesthetic. The color palette focuses on refined neutral stone tones, deep shadows, and subtle highlights." data-location="C/ Pizarro, Valencia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBlDUo5s0WBxr2_q4X0n4J7WXzLIzvMooE21jCo-OHdsUk2BI4FesWOwe3N6wUoh-AnzfnAfexTRFzekj-YQ7Jja4BtK_-8M-X-_rtgxnXXZzW2qiLdjSSFXgbUwA1K1lZbOlg9c4Wvbf84P51jaaO11MXNmTJt5xHkIAKBO6hESZhAW0ifq6Su_YWJjvv_9WQf52B9Utjjf_B9JMqV_0p0EBkV_6tCx5QisOUMt9qKTayrwqWusW_X5-zyQXa68X7FN7Q7oywPBsw');">
+</div>
+<!-- Overlay for design cohesion -->
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply pointer-events-none"></div>
+<!-- Map Marker overlay -->
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg border border-secondary/20 mb-2">
+<span class="material-symbols-outlined text-[28px] text-secondary icon-fill">location_on</span>
+</div>
+<div class="bg-white/90 backdrop-blur px-4 py-2 rounded shadow-sm border border-outline-variant/30 font-label-caps text-label-caps text-on-surface">
+                    SIGNUM ABOGADOS
+                </div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-primary-container dark:bg-black border-t border-on-primary-fixed-variant/20 noise-bg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
+<!-- Logo Column -->
+<div class="col-span-1 md:col-span-1 mb-8 md:mb-0">
+<h2 class="font-display-lg text-headline-md text-on-primary dark:text-tertiary-fixed mb-4">
+                    Signum Abogados
+                </h2>
+<div class="w-8 h-px bg-secondary mb-6"></div>
+<p class="font-body-sm text-body-sm text-on-primary-container dark:text-tertiary-fixed-dim max-w-xs">
+                    Jurisprudencia de autor para patrimonios y corporaciones.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="col-span-1 flex flex-col gap-3">
+<a class="font-body-sm text-body-sm text-on-primary-container/70 hover:text-on-primary hover:translate-x-1 transition-transform duration-200" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-primary-container/70 hover:text-on-primary hover:translate-x-1 transition-transform duration-200" href="#">Legal Notice</a>
+</div>
+<!-- Links Column 2 -->
+<div class="col-span-1 flex flex-col gap-3">
+<a class="font-body-sm text-body-sm text-on-primary-container/70 hover:text-on-primary hover:translate-x-1 transition-transform duration-200" href="#">Cookies</a>
+<a class="font-body-sm text-body-sm text-on-primary-container/70 hover:text-on-primary hover:translate-x-1 transition-transform duration-200" href="#">Sitemap</a>
+</div>
+<!-- Copyright Column -->
+<div class="col-span-1 md:col-span-1 flex items-end md:justify-end mt-8 md:mt-0">
+<p class="font-body-sm text-body-sm text-on-primary-container dark:text-tertiary-fixed-dim opacity-90 hover:opacity-100">
+                    © 2026 Signum Abogados Valencia. ICAV Accredited.
+                </p>
+</div>
+</div>
+</footer>
+</body></html>

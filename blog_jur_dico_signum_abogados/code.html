@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog - Signum Abogados</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;400;600&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-tint": "#525f71",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#000000",
+                        "on-surface": "#1c1c18",
+                        "surface-container": "#f1ede7",
+                        "outline-variant": "#c4c6cc",
+                        "inverse-on-surface": "#f4f0ea",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#1c1c18",
+                        "surface-dim": "#ddd9d4",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#785d00",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e6e2dc",
+                        "outline": "#74777d",
+                        "primary-container": "#0f1c2c",
+                        "on-primary-container": "#778598",
+                        "inverse-primary": "#bac8dc",
+                        "tertiary-fixed-dim": "#b3c8e3",
+                        "surface": "#fdf9f3",
+                        "background": "#fdf9f3",
+                        "on-secondary-fixed-variant": "#584400",
+                        "surface-container-high": "#ebe8e2",
+                        "secondary": "#755b00",
+                        "secondary-container": "#fed977",
+                        "surface-container-low": "#f7f3ed",
+                        "inverse-surface": "#31302d",
+                        "secondary-fixed": "#ffe08f",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#051d31",
+                        "on-tertiary-container": "#71869e",
+                        "on-primary-fixed-variant": "#3a4859",
+                        "surface-container-highest": "#e6e2dc",
+                        "primary-fixed-dim": "#bac8dc",
+                        "on-tertiary-fixed-variant": "#34485f",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#e6c364",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#d6e4f9",
+                        "on-secondary-fixed": "#241a00",
+                        "tertiary-fixed": "#d0e4ff",
+                        "surface-bright": "#fdf9f3",
+                        "on-primary-fixed": "#0f1c2c",
+                        "on-tertiary-fixed": "#051d31",
+                        "on-surface-variant": "#44474c",
+                        "primary": "#000000"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px"
+                    },
+                    fontFamily: {
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "label-caps": ["DM Sans"],
+                        "body-sm": ["DM Sans"],
+                        "body-lg": ["DM Sans"],
+                        "body-md": ["DM Sans"],
+                        "headline-sm": ["Playfair Display"]
+                    },
+                    fontSize: {
+                        "display-lg": ["72px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                        "headline-lg": ["48px", { lineHeight: "1.2", fontWeight: "700" }],
+                        "headline-lg-mobile": ["36px", { lineHeight: "1.2", fontWeight: "700" }],
+                        "headline-md": ["32px", { lineHeight: "1.3", fontWeight: "400" }],
+                        "label-caps": ["12px", { lineHeight: "1.0", letterSpacing: "0.1em", fontWeight: "600" }],
+                        "body-sm": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+                        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "300" }],
+                        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+                        "headline-sm": ["24px", { lineHeight: "1.4", fontWeight: "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Signum Abogados Blog",
+      "url": "https://www.signumabogados.es/blog",
+      "description": "Actualidad legal, consejos y análisis jurisprudencial por los expertos de Signum Abogados.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Signum Abogados"
+      }
+    }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-secondary selection:text-on-secondary">
+<!-- TopAppBar -->
+<header class="bg-white/80 dark:bg-primary-container/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-secondary/30">
+<nav class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-sm text-primary dark:text-tertiary-fixed tracking-tight hover:opacity-80 transition-all duration-300" href="/signum_abogados_home/code.html">
+                Signum Abogados
+            </a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary hover:opacity-80 transition-all duration-300 font-label-caps text-label-caps uppercase tracking-wider" href="/servicios_jur_dicos_signum_abogados/code.html">Services</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary hover:opacity-80 transition-all duration-300 font-label-caps text-label-caps uppercase tracking-wider" href="/nuestro_equipo_signum_abogados/code.html">Team</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary hover:opacity-80 transition-all duration-300 font-label-caps text-label-caps uppercase tracking-wider" href="/casos_de_xito_signum_abogados/code.html">Success</a>
+<a class="text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary hover:opacity-80 transition-all duration-300 font-label-caps text-label-caps uppercase tracking-wider pb-1" href="/blog_jur_dico_signum_abogados/code.html">Blog</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary hover:opacity-80 transition-all duration-300 font-label-caps text-label-caps uppercase tracking-wider" href="/contacto_signum_abogados_valencia/code.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex items-center justify-center border border-secondary text-secondary rounded-full px-6 py-2 hover:bg-secondary hover:text-on-secondary transition-colors duration-300 font-label-caps text-label-caps uppercase tracking-wider scale-98 transition-transform">
+                    WhatsApp
+                </button>
+<button class="flex items-center justify-center bg-primary text-on-primary rounded-full px-6 py-2 hover:opacity-90 transition-opacity duration-300 font-label-caps text-label-caps uppercase tracking-wider scale-98 transition-transform">
+                    Call
+                </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-[100px]">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-[80px] md:py-[120px] max-w-container-max mx-auto text-center">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Actualidad Legal</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+                Análisis jurisprudencial, novedades legislativas y consejos prácticos elaborados por nuestro equipo de expertos en derecho.
+            </p>
+<!-- Search -->
+<div class="max-w-xl mx-auto mb-12 relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant" style="font-variation-settings: 'FILL' 0;">search</span>
+<input class="w-full bg-surface-container border-0 border-b border-secondary rounded DEFAULT pl-12 pr-4 py-4 font-body-md text-body-md text-primary focus:ring-0 focus:border-secondary transition-colors" placeholder="Buscar artículos..." type="text"/>
+</div>
+<!-- Categories -->
+<div class="flex flex-wrap justify-center gap-4">
+<a class="px-6 py-2 rounded-full border border-secondary text-secondary hover:bg-secondary hover:text-on-secondary transition-colors duration-300 font-label-caps text-label-caps uppercase" href="#">Todos</a>
+<a class="px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors duration-300 font-label-caps text-label-caps uppercase" href="#">Familia</a>
+<a class="px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors duration-300 font-label-caps text-label-caps uppercase" href="#">Laboral</a>
+<a class="px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors duration-300 font-label-caps text-label-caps uppercase" href="#">Civil</a>
+<a class="px-6 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors duration-300 font-label-caps text-label-caps uppercase" href="#">Mercantil</a>
+</div>
+</section>
+<!-- Divider -->
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<hr class="border-t border-[#C9A84C] opacity-50"/>
+</div>
+<!-- Featured Article -->
+<section class="px-margin-mobile md:px-margin-desktop py-[80px] md:py-[120px] max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 relative h-[400px] md:h-[600px] rounded-xl overflow-hidden group cursor-pointer">
+<img alt="Featured article" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-end editorial photograph of a minimalist, modern law office interior. Soft, natural light streams through large windows, illuminating a polished wooden desk with neatly organized legal documents bound in thick white paper. The scene emphasizes a sense of order, premium exclusivity, and serene authority, aligning with a light-mode luxury aesthetic. Subtle shadows and a shallow depth of field draw focus to the tactile texture of the paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAd4TfXoWfI15Q0I10o_t4vdaaEONkdoGdJ3W0tH7MA5eVmxSMMrXg0k3RzcC3ZB1YPJW5KyYPLvITIWEJvJ7mc-u-0for8Fo53cYJ9my-GaMXARBnTMoL96OhY7L55e4GUOTQ-Slzi3he21yA-w8r7C66jfg59cRgtF6_GniaBX0mOnhrsX-fTirAZHfHTG3-F_eGq6S3rexrCgT7YNmpS4l-DXibypw5CIKA651gYutZbeDgwu9jW83N7wTIMlyOc9YJkqf89qc"/>
+</div>
+<div class="md:col-span-5 flex flex-col justify-center">
+<div class="flex items-center gap-4 mb-6">
+<span class="text-secondary font-label-caps text-label-caps uppercase tracking-wider">Derecho de Familia</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">•</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">15 Marzo, 2026</span>
+</div>
+<h2 class="font-headline-lg text-headline-md md:text-headline-lg text-primary mb-6 hover:text-secondary transition-colors cursor-pointer">
+                        ¿Cómo afecta la nueva jurisprudencia a la custodia compartida en 2026?
+                    </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                        Un análisis detallado de las recientes sentencias del Tribunal Supremo y su impacto en los procedimientos de divorcio con hijos menores. Conozca los nuevos criterios de evaluación judicial.
+                    </p>
+<div class="flex items-center gap-4">
+<img alt="Author" class="w-12 h-12 rounded-full object-cover" data-alt="A professional headshot of a distinguished male lawyer in his mid-40s. He is wearing a sharply tailored dark navy suit with a crisp white shirt, photographed against a clean, bright studio background. The lighting is soft and flattering, creating a high-end corporate portrait that conveys absolute trust, precision, and refined luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmaQXLEW_wzplP24p_QMk9-u3NglM1Vd5kp0NOGhIe1cDrEzRJM_nNBYqKrM00zRDCOuHjqmb6ic-k44ke-p1yYS-xRmBvTPFT8U9qxmSOc_uD1Mpowxjk575hmuElxnkgrC8bfpydqEDuxUa6AJ8R7fJNtHRV1UJ7hS6fbM0i9N4U7l2B2nt2U7o--cofXM0X0zfTsXCB0bX7rOn7ui9Vc4zGzI3dflPJqoE1WJh8zW6yBURNWadOD_UNzg3zcpPoO4TRKOB7g2Q"/>
+<div>
+<p class="font-headline-sm text-body-md font-bold text-primary">Carlos Valiente</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Socio Director</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<hr class="border-t border-[#C9A84C] opacity-50"/>
+</div>
+<!-- Article Grid -->
+<section class="px-margin-mobile md:px-margin-desktop py-[80px] md:py-[120px] max-w-container-max mx-auto">
+<h3 class="font-headline-md text-headline-md text-primary mb-12">Últimas Publicaciones</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Article 1 -->
+<article class="bg-surface-container-lowest rounded-xl border border-surface-container-high overflow-hidden group cursor-pointer hover:shadow-lg transition-all duration-300">
+<div class="h-64 overflow-hidden">
+<img alt="Article 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A close-up, high-contrast editorial shot of financial documents and a sleek, silver pen resting on a crisp white table. The lighting is bright and modern, creating a clean, professional atmosphere typical of a high-end corporate environment. The depth of field is shallow, highlighting the intricate details of the numbers on the paper while blurring the background into a bright, airy void." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYWKpHsJda72iZfRzFJ8Jo0iehBsltJw1hw1mU72jFk3Z2EKNf6b-3DUGSLdBn7MVCZuSg4p8U-PXvjLXUvyborLHgGUWajAOynPEGgEd5ZEKdnD4RjNH_DKY_ciDxa6PaPTKumVO79vnZy3wq-z0KcZ-kbs9HvZ2n5tFdkMqnGbNWxLKMwoLFatkY3qFgdLSzaD55vY8jRjY5faBBlhdZM-QKBnUFS1SWEy0NOh2vsooP6E0VLroK7_Oow631d_WB-n1DYvPZs9A"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-center mb-4">
+<span class="text-secondary font-label-caps text-label-caps uppercase tracking-wider">Familia</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 0;">schedule</span> 5 min
+                            </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-3 group-hover:text-secondary transition-colors">¿Cuánto cuesta un divorcio en 2026?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                            Desglose detallado de los costes asociados a un procedimiento de divorcio, desde las tasas judiciales hasta los honorarios profesionales, en el contexto económico actual.
+                        </p>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="bg-surface-container-lowest rounded-xl border border-surface-container-high overflow-hidden group cursor-pointer hover:shadow-lg transition-all duration-300">
+<div class="h-64 overflow-hidden">
+<img alt="Article 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An abstract, architectural photograph showing the intersection of glass and steel in a modern corporate building. The scene is bathed in cool, bright daylight, reflecting a sense of transparency and structural integrity. The composition is minimalist, relying on strong geometric lines and a high-key color palette of whites, light greys, and subtle blue reflections, conveying a cutting-edge digital luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBicvD8RWHoHs_soSK0uqyMHgMcsLqYnKgnobdmO_9yyeu_FBVbIo8sE7ADc4wYqFpFeceKWze5npSVql31fOo7GSESSKxNlj0SAWjpW0-41IzDbnKEGejMj9TpBleqlDdyhmAA8VAqE6qnYqrSS_3535B1FaM41yBCEpO7TXMRE1Sb-HOKG-WkMJl4CK-6ceqA7vhFYW6eSRqA3LKX5eTHuvZFavmrjIGEJluoerqTpUonnzizJRfD9A5pCt4oiq5t5cbxioJ_uAo"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-center mb-4">
+<span class="text-secondary font-label-caps text-label-caps uppercase tracking-wider">Laboral</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 0;">schedule</span> 8 min
+                            </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-3 group-hover:text-secondary transition-colors">Despido improcedente: Derechos y compensaciones</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                            Guía completa sobre cómo actuar ante un despido disciplinario u objetivo que carece de justificación legal. Pasos a seguir y cálculo de indemnizaciones.
+                        </p>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="bg-surface-container-lowest rounded-xl border border-surface-container-high overflow-hidden group cursor-pointer hover:shadow-lg transition-all duration-300">
+<div class="h-64 overflow-hidden">
+<img alt="Article 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A stylized, overhead shot of a person signing a formal legal contract with an elegant fountain pen. The desk surface is a textured, light cream color, enhancing the tactile 'physical paper' quality required by the brand guidelines. The lighting is soft and directional, casting subtle shadows that emphasize the premium, exclusive nature of the transaction. The mood is serious and authoritative." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLu_AULej4wzig1Fz7fbe8-sfoTzO2G1ASSQm30gXnrcq69il_TkKT9AHXNhcdkZorPhU14XybL3bu1u8Lx_yO0DHG01r28tONyRyEaWqeuYdWPPNBiYi8XUNtYjHgfEuHoJYX9hdVhh3y_mJZdl51Q5Hr_5EQMVRogaIhuLZnevBOFYltKaBvd7RQOIFcU0WCY0v1mHXM3J7cldnQL6o7KQE2fEkHSKYszQocmsVrHleX1Y9zjOQnsn5VXNO-5nTIZ9eh0tvc2qg"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-center mb-4">
+<span class="text-secondary font-label-caps text-label-caps uppercase tracking-wider">Mercantil</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 0;">schedule</span> 6 min
+                            </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-3 group-hover:text-secondary transition-colors">Ley de la 2ª Oportunidad: Requisitos de acceso</h4>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+                            Todo lo que necesita saber para exonerar sus deudas si es autónomo o particular. Análisis de las últimas modificaciones legislativas y casos de éxito reales.
+                        </p>
+</div>
+</article>
+</div>
+<div class="mt-16 text-center">
+<button class="border border-secondary text-secondary rounded-full px-8 py-3 hover:bg-secondary hover:text-on-secondary transition-colors duration-300 font-label-caps text-label-caps uppercase tracking-wider scale-98 transition-transform">
+                    Cargar más artículos
+                </button>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="px-margin-mobile md:px-margin-desktop py-[80px] max-w-container-max mx-auto">
+<div class="bg-primary-container rounded-xl p-8 md:p-16 text-center relative overflow-hidden">
+<!-- Subtle noise overlay simulation -->
+<div class="absolute inset-0 opacity-5 mix-blend-overlay pointer-events-none" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"></div>
+<div class="relative z-10 max-w-2xl mx-auto">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6 block" style="font-variation-settings: 'FILL' 0;">mail</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mb-4">Recibe consejos legales en tu bandeja</h3>
+<p class="font-body-md text-body-md text-on-primary-container mb-8">
+                        Suscríbete a nuestra newsletter mensual para mantenerte informado sobre las últimas novedades legislativas que pueden afectar a tu patrimonio o empresa.
+                    </p>
+<form class="flex flex-col sm:flex-row gap-4 justify-center">
+<input class="w-full sm:w-auto flex-1 bg-surface-tint/20 border-0 border-b border-secondary rounded DEFAULT px-4 py-3 font-body-md text-body-md text-on-primary placeholder:text-on-primary-container focus:ring-0 focus:border-secondary transition-colors" placeholder="Tu correo electrónico" type="email"/>
+<button class="bg-secondary text-on-secondary rounded-full px-8 py-3 hover:opacity-90 transition-opacity duration-300 font-label-caps text-label-caps uppercase tracking-wider scale-98 transition-transform whitespace-nowrap" type="submit">
+                            Suscribirse
+                        </button>
+</form>
+<p class="font-body-sm text-label-caps text-on-primary-container/60 mt-4 text-xs">
+                        Al suscribirse, acepta nuestra Política de Privacidad.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary-container dark:bg-black w-full pt-16 pb-8 border-t border-on-primary-fixed-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-12">
+<div class="col-span-1 md:col-span-2">
+<h4 class="font-display-lg text-headline-md text-on-primary dark:text-tertiary-fixed mb-6">Signum Abogados</h4>
+<p class="font-body-sm text-body-sm text-on-primary-container dark:text-tertiary-fixed-dim max-w-sm mb-6">
+                    Defendiendo sus intereses con rigor, precisión y absoluta discreción. Excelencia jurídica desde el corazón de Valencia.
+                </p>
+</div>
+<div class="col-span-1">
+<h5 class="font-headline-sm text-body-lg text-on-primary mb-4">Legal</h5>
+<ul class="space-y-3">
+<li><a class="font-body-sm text-body-sm text-on-primary-container/70 hover:text-on-primary opacity-90 hover:opacity-100 hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary-container/70 hover:text-on-primary opacity-90 hover:opacity-100 hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Legal Notice</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary-container/70 hover:text-on-primary opacity-90 hover:opacity-100 hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Cookies</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary-container/70 hover:text-on-primary opacity-90 hover:opacity-100 hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h5 class="font-headline-sm text-body-lg text-on-primary mb-4">Contacto</h5>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-primary-container dark:text-tertiary-fixed-dim">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 0;">location_on</span>
+                        Calle Paz 14, Valencia
+                    </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 0;">call</span>
+                        +34 960 000 000
+                    </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 0;">mail</span>
+                        info@signumabogados.es
+                    </li>
+</ul>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-on-primary-container/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-sm text-body-sm text-on-primary-container dark:text-tertiary-fixed-dim">
+                © 2026 Signum Abogados Valencia. ICAV Accredited.
+            </p>
+<div class="flex gap-4 text-on-primary-container">
+<a class="hover:text-secondary transition-colors" href="#"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">language</span></a>
+</div>
+</div>
+</footer>
+</body></html>

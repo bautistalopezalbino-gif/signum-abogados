@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Equipo - Signum Abogados</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=DM+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#525f71",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#000000",
+                        "on-surface": "#1c1c18",
+                        "surface-container": "#f1ede7",
+                        "outline-variant": "#c4c6cc",
+                        "inverse-on-surface": "#f4f0ea",
+                        "surface-container-lowest": "#ffffff",
+                        "on-background": "#1c1c18",
+                        "surface-dim": "#ddd9d4",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#785d00",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e6e2dc",
+                        "outline": "#74777d",
+                        "primary-container": "#0f1c2c",
+                        "on-primary-container": "#778598",
+                        "inverse-primary": "#bac8dc",
+                        "tertiary-fixed-dim": "#b3c8e3",
+                        "surface": "#fdf9f3",
+                        "background": "#fdf9f3",
+                        "on-secondary-fixed-variant": "#584400",
+                        "surface-container-high": "#ebe8e2",
+                        "secondary": "#755b00",
+                        "secondary-container": "#fed977",
+                        "surface-container-low": "#f7f3ed",
+                        "inverse-surface": "#31302d",
+                        "secondary-fixed": "#ffe08f",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary-container": "#051d31",
+                        "on-tertiary-container": "#71869e",
+                        "on-primary-fixed-variant": "#3a4859",
+                        "surface-container-highest": "#e6e2dc",
+                        "primary-fixed-dim": "#bac8dc",
+                        "on-tertiary-fixed-variant": "#34485f",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed-dim": "#e6c364",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#d6e4f9",
+                        "on-secondary-fixed": "#241a00",
+                        "tertiary-fixed": "#d0e4ff",
+                        "surface-bright": "#fdf9f3",
+                        "on-primary-fixed": "#0f1c2c",
+                        "on-tertiary-fixed": "#051d31",
+                        "on-surface-variant": "#44474c",
+                        "primary": "#000000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1440px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "label-caps": ["DM Sans"],
+                        "body-sm": ["DM Sans"],
+                        "body-lg": ["DM Sans"],
+                        "body-md": ["DM Sans"],
+                        "headline-sm": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "300" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .noise-bg {
+            position: relative;
+        }
+        .noise-bg::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 1;
+        }
+        .gold-line {
+            border-top: 0.5px solid #C9A84C;
+        }
+        .gold-line-bottom {
+            border-bottom: 0.5px solid #C9A84C;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Ana Isabel García San Miguel",
+        "jobTitle": "Directora",
+        "worksFor": {
+          "@type": "LegalService",
+          "name": "Signum Abogados"
+        },
+        "description": "Abogada experta con décadas de experiencia en el ICAV."
+      }
+    }
+    </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased noise-bg">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-primary-container/90 backdrop-blur-md border-b border-secondary/30">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-sm text-primary dark:text-tertiary-fixed tracking-tight hover:opacity-80 transition-all duration-300" href="/signum_abogados_home/code.html">Signum Abogados</a>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/servicios_jur_dicos_signum_abogados/code.html">Services</a>
+<a class="text-secondary dark:text-secondary-fixed font-bold border-b-2 border-secondary font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/nuestro_equipo_signum_abogados/code.html">Team</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/casos_de_xito_signum_abogados/code.html">Success</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/blog_jur_dico_signum_abogados/code.html">Blog</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/contacto_signum_abogados_valencia/code.html">Contact</a>
+</div>
+<div class="flex space-x-4">
+<a class="hidden md:flex items-center gap-2 border border-secondary text-secondary px-6 py-2 rounded-full hover:opacity-80 transition-all duration-300 font-label-caps text-label-caps" href="tel:+34900123456"><span class="material-symbols-outlined text-[18px]">call</span>Call</a>
+<a class="flex items-center gap-2 bg-primary-container text-on-primary px-6 py-2 rounded-full hover:opacity-80 transition-all duration-300 font-label-caps text-label-caps" href="#"><span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp</a>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-24 relative z-10">
+<div class="max-w-3xl">
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary mb-6">Conoce a tu abogado antes de llamar</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    En Signum Abogados, creemos que la confianza es el pilar de cualquier relación legal. Nuestro equipo de expertos está aquí para escucharte y defender tus intereses con rigor y cercanía.
+                </p>
+</div>
+<div class="gold-line mt-12 w-24"></div>
+</section>
+<!-- Director Card -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-32 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 relative">
+<div class="rounded-[12px] overflow-hidden aspect-[4/5] relative bg-surface-container shadow-sm border border-outline-variant/30">
+<img alt="Ana Isabel García San Miguel" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A highly professional and elegant portrait of a confident female senior lawyer in a modern, luxurious office setting. She is wearing a tailored navy suit and looking directly at the camera with a reassuring, authoritative expression. The lighting is soft, high-key, and natural, creating a refined editorial magazine aesthetic. The background is slightly blurred, featuring subtle legal volumes and a bright, minimalist decor typical of a high-end corporate environment. The overall mood is trustworthy, majestic, and premium." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsczBg6uYSZZptXrRQXO43q_y4qG-WPAsOD2XaYmARPQLT49QH7p3SR6LHzrHnO7nSgOnyFpy9jOneOfbZhMyBpBpHf4NXiGn4livekqBLVWx7Rq1hf4U7Tbt8_3p1_33OR0l_qjmLpsKrrSMgmK6t5Gk4cysxnKB4F_WoOpva1OfdtzvVLTxJwsJRsLEHin65cPas9jbuHccL5w7gpUYxfQptn-FS14I456rkqi00lOvTKY5bkJOGAtqWlJuisQMgPsh--njgWMg"/>
+</div>
+</div>
+<div class="lg:col-span-7 lg:pl-12 mt-8 lg:mt-0">
+<div class="mb-6">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase block mb-2">Directora General</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-2">Ana Isabel García San Miguel</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mb-8">Colegiada ICAV 12345</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface mb-8">
+                        Con más de 25 años de experiencia en litigación compleja y derecho corporativo, Ana Isabel lidera Signum con una visión clara: combinar la excelencia jurídica tradicional con un enfoque moderno y accesible. Su trayectoria en los tribunales de Valencia es sinónimo de rigor y éxito.
+                    </p>
+<div class="pl-6 border-l-2 border-[#C9A84C] mb-8">
+<p class="font-headline-md text-headline-md text-primary italic">
+                            "La ley es compleja, pero nuestra misión es hacerla comprensible y útil para quienes confían en nosotros. Cada caso es personal."
+                        </p>
+</div>
+<a class="inline-flex items-center space-x-2 text-secondary hover:text-primary transition-colors" href="#">
+<span class="font-label-caps text-label-caps">LinkedIn Profile</span>
+<span class="material-symbols-outlined text-sm">arrow_outward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Team Grid -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-32 relative z-10">
+<div class="flex justify-between items-end mb-12">
+<h3 class="font-headline-lg text-headline-md text-primary">Nuestro Equipo</h3>
+<div class="hidden md:block gold-line flex-grow ml-8 mb-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Team Member 1 -->
+<div class="bg-white rounded-[12px] p-8 border border-[#F0ECE6] relative group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 bg-surface-container">
+<img alt="Carlos Mendoza" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional headshot of a mature, confident male lawyer in a crisp tailored suit, set against a bright, minimalist white background. Soft, diffused lighting highlights his approachable yet authoritative expression. The aesthetic is clean, premium, and corporate editorial." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtgdvGDpo-ClPYEc1wjtp_xVoEfH9nTTVbMesghC6E0nZEYQf3NTtfVc6Zcxosp1mrpLfyDxkyNvewhHUIyKkgXOQlrFkPtvsAVfwNbQWGw4IMEFN-wmi7EJwiYO0keRnVVWaZ3vL9Rx40b13ueO_Sv08Hthhe9pqr2JD3xUIojLc75Ayenmlli-IcYLmC3gjFIMyDQAeFFpSxdWVudpM1wTfLp3nuOP88h7cXV7pvCP8Y0sqzZIL5uSk9PujVflWJ7VfOUJPEQuo"/>
+</div>
+<div class="text-center">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Carlos Mendoza</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Socio, Derecho Penal</p>
+<div class="flex justify-center flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-surface text-secondary font-label-caps text-[10px] rounded border border-[#C9A84C]/30">Penal Económico</span>
+<span class="px-3 py-1 bg-surface text-secondary font-label-caps text-[10px] rounded border border-[#C9A84C]/30">Compliance</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">15 años de exp.</p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="bg-white rounded-[12px] p-8 border border-[#F0ECE6] relative group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 bg-surface-container">
+<img alt="Laura Vidal" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional headshot of a bright, articulate female lawyer in her 30s wearing a modern blazer, set against a pristine, light-filled office background. The lighting is high-key and flattering, emphasizing a trustworthy and dynamic personality. Premium editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2TjzVAiqcdqXd8g6MTbSOL23ZVS4huPA0wifqKFlUIfX5qojUVCa538T_TBqhL_1DgcS21D95qa--yjqZMnEpzGukOfk-gn4xBlzhLv4U0xXJKQ57og71BVXUV3tMkQl99OEtY0sJbAtp3nUm0O0CO76scj7OakGoaRzMGGG2Rt0G5-ck8ndVXVJoO3SB9nHUcrvLDpFm6r5phdlNU6TLCA_9LrJ8ShbsHI7ipK-aGPC07TliypKpGzZRaKD099L3BMYrxS_s94U"/>
+</div>
+<div class="text-center">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Laura Vidal</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Asociada Senior, Familia</p>
+<div class="flex justify-center flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-surface text-secondary font-label-caps text-[10px] rounded border border-[#C9A84C]/30">Divorcios</span>
+<span class="px-3 py-1 bg-surface text-secondary font-label-caps text-[10px] rounded border border-[#C9A84C]/30">Sucesiones</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">10 años de exp.</p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="bg-white rounded-[12px] p-8 border border-[#F0ECE6] relative group hover:-translate-y-1 transition-transform duration-300">
+<div class="w-32 h-32 rounded-full overflow-hidden mx-auto mb-6 bg-surface-container">
+<img alt="Javier Roig" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A polished headshot of an experienced male corporate lawyer in a dark suit and tie. He has a calm, analytical demeanor. The background is a soft, out-of-focus modern office with glass partitions. The lighting is balanced and professional, conveying quiet authority and luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuArT62Too9KV6lpr2c7UVyeekt0mV2VDbsEY0lJVj-iaxWJoZ-9Wcl7f2QzngszLxrVfiHRBTVIvT3KHKz2T9tiOz9r8hKuIgzhmxXEEJ6VrWfbRQ8tlmSXy7nt_taUBtcGpeODHPH43CegU6dborfSXxZN10hak65-V6rPx3905pzryCXq0P5sasYPfpC0mQivnMmp2_IZrKtOJUI7353J7zzyS6z1SpuG2y0oL5IGHr8cN4gsLl6eSbiMKqCLaSkKo0HPzbSdzto"/>
+</div>
+<div class="text-center">
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Javier Roig</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Asociado, Mercantil</p>
+<div class="flex justify-center flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-surface text-secondary font-label-caps text-[10px] rounded border border-[#C9A84C]/30">Fusiones</span>
+<span class="px-3 py-1 bg-surface text-secondary font-label-caps text-[10px] rounded border border-[#C9A84C]/30">Contratos</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">8 años de exp.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="gold-line mb-16"></div>
+<h3 class="font-headline-lg text-headline-md text-primary mb-12 text-center">Nuestros Valores</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="p-6 bg-white rounded-[12px] border border-[#F0ECE6]">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4">handshake</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Cercanía</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tratamos cada asunto con la empatía y atención personal que requiere, manteniéndote siempre informado.</p>
+</div>
+<div class="p-6 bg-white rounded-[12px] border border-[#F0ECE6]">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4">visibility</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Transparencia</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hablamos claro sobre viabilidad, costes y plazos. Sin letra pequeña ni falsas expectativas.</p>
+</div>
+<div class="p-6 bg-white rounded-[12px] border border-[#F0ECE6]">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4">school</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Especialización</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Cada miembro del equipo se dedica exclusivamente a su área de práctica, garantizando un profundo conocimiento.</p>
+</div>
+<div class="p-6 bg-white rounded-[12px] border border-[#F0ECE6]">
+<span class="material-symbols-outlined text-secondary text-3xl mb-4">verified_user</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-2">Compromiso</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tu objetivo es el nuestro. Dedicamos el tiempo y los recursos necesarios para alcanzar el mejor resultado.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-primary-container dark:bg-black border-t border-on-primary-fixed-variant/20 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-12">
+<div class="col-span-1 md:col-span-2">
+<a class="font-display-lg text-headline-md text-on-primary dark:text-tertiary-fixed block mb-4 hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100" href="/">Signum Abogados</a>
+<p class="font-body-sm text-body-sm text-on-primary-container/70 max-w-sm">
+                    Defendiendo sus intereses con rigor, excelencia y un enfoque moderno desde Valencia.
+                </p>
+</div>
+<div class="col-span-1">
+<h5 class="font-label-caps text-label-caps text-on-primary mb-4 uppercase tracking-widest">Legal</h5>
+<ul class="space-y-3">
+<li><a class="font-body-sm text-body-sm text-on-primary-container/70 hover:text-on-primary opacity-90 hover:opacity-100 hover:translate-x-1 transition-transform duration-200 block" href="#">Privacy Policy</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary-container/70 hover:text-on-primary opacity-90 hover:opacity-100 hover:translate-x-1 transition-transform duration-200 block" href="#">Legal Notice</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary-container/70 hover:text-on-primary opacity-90 hover:opacity-100 hover:translate-x-1 transition-transform duration-200 block" href="#">Cookies</a></li>
+<li><a class="font-body-sm text-body-sm text-on-primary-container/70 hover:text-on-primary opacity-90 hover:opacity-100 hover:translate-x-1 transition-transform duration-200 block" href="#">Sitemap</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h5 class="font-label-caps text-label-caps text-on-primary mb-4 uppercase tracking-widest">Contacto</h5>
+<p class="font-body-sm text-body-sm text-on-primary-container/70 mb-2">Valencia, España</p>
+<p class="font-body-sm text-body-sm text-on-primary-container/70">info@signumabogados.es</p>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-on-primary-fixed-variant/20 pt-8">
+<p class="font-body-sm text-body-sm text-on-primary-container dark:text-tertiary-fixed-dim">
+                © 2026 Signum Abogados Valencia. ICAV Accredited.
+            </p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Calculadora de Indemnización - Signum Abogados</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=DM+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-tint": "#525f71",
+                      "on-secondary": "#ffffff",
+                      "tertiary": "#000000",
+                      "on-surface": "#1c1c18",
+                      "surface-container": "#f1ede7",
+                      "outline-variant": "#c4c6cc",
+                      "inverse-on-surface": "#f4f0ea",
+                      "surface-container-lowest": "#ffffff",
+                      "on-background": "#1c1c18",
+                      "surface-dim": "#ddd9d4",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-container": "#785d00",
+                      "on-error": "#ffffff",
+                      "surface-variant": "#e6e2dc",
+                      "outline": "#74777d",
+                      "primary-container": "#0f1c2c",
+                      "on-primary-container": "#778598",
+                      "inverse-primary": "#bac8dc",
+                      "tertiary-fixed-dim": "#b3c8e3",
+                      "surface": "#fdf9f3",
+                      "background": "#fdf9f3",
+                      "on-secondary-fixed-variant": "#584400",
+                      "surface-container-high": "#ebe8e2",
+                      "secondary": "#755b00",
+                      "secondary-container": "#fed977",
+                      "surface-container-low": "#f7f3ed",
+                      "inverse-surface": "#31302d",
+                      "secondary-fixed": "#ffe08f",
+                      "on-primary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "tertiary-container": "#051d31",
+                      "on-tertiary-container": "#71869e",
+                      "on-primary-fixed-variant": "#3a4859",
+                      "surface-container-highest": "#e6e2dc",
+                      "primary-fixed-dim": "#bac8dc",
+                      "on-tertiary-fixed-variant": "#34485f",
+                      "error-container": "#ffdad6",
+                      "secondary-fixed-dim": "#e6c364",
+                      "on-error-container": "#93000a",
+                      "primary-fixed": "#d6e4f9",
+                      "on-secondary-fixed": "#241a00",
+                      "tertiary-fixed": "#d0e4ff",
+                      "surface-bright": "#fdf9f3",
+                      "on-primary-fixed": "#0f1c2c",
+                      "on-tertiary-fixed": "#051d31",
+                      "on-surface-variant": "#44474c",
+                      "primary": "#000000"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1440px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "80px"
+              },
+              "fontFamily": {
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "label-caps": [
+                              "DM Sans"
+                      ],
+                      "body-sm": [
+                              "DM Sans"
+                      ],
+                      "body-lg": [
+                              "DM Sans"
+                      ],
+                      "body-md": [
+                              "DM Sans"
+                      ],
+                      "headline-sm": [
+                              "Playfair Display"
+                      ]
+              },
+              "fontSize": {
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "300"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .noise-bg {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Style range inputs for the sliders */
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background: #0f1c2c;
+            cursor: pointer;
+            margin-top: -8px;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: #e6e2dc;
+            border-radius: 2px;
+        }
+        input[type=range]:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased noise-bg min-h-screen flex flex-col pt-24">
+<!-- TopAppBar Shared Component -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-primary-container/90 backdrop-blur-md border-b border-secondary/30">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a class="font-display-lg text-headline-sm text-primary dark:text-tertiary-fixed tracking-tight hover:opacity-80 transition-all duration-300" href="/signum_abogados_home/code.html">
+                Signum Abogados
+            </a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/servicios_jur_dicos_signum_abogados/code.html">Services</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/nuestro_equipo_signum_abogados/code.html">Team</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/casos_de_xito_signum_abogados/code.html">Success</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/blog_jur_dico_signum_abogados/code.html">Blog</a>
+<a class="text-on-surface dark:text-on-surface-variant hover:text-secondary font-body-md text-body-md hover:opacity-80 transition-all duration-300" href="/contacto_signum_abogados_valencia/code.html">Contact</a>
+</nav>
+<div class="flex gap-4 items-center hidden md:flex">
+<a class="px-6 py-2 rounded-full border border-secondary text-secondary font-label-caps text-label-caps hover:opacity-80 transition-all duration-300 flex items-center gap-2" href="tel:+34900123456"><span class="material-symbols-outlined text-[18px]">call</span>Call</a>
+<a class="px-6 py-2 rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps hover:opacity-80 transition-all duration-300 flex items-center gap-2" href="#"><span class="material-symbols-outlined text-[18px]">chat</span>WhatsApp</a>
+</div>
+<!-- Mobile Menu Icon (Hidden on Desktop) -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-headline-md">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-[120px] max-w-container-max mx-auto text-center">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Calcula tu indemnización en 30 segundos</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">Herramienta legal basada en la legislación vigente (2026). Selecciona el motivo para obtener una estimación inmediata.</p>
+<!-- Selector Tipo -->
+<div class="flex justify-center gap-4 mb-16">
+<button class="px-8 py-3 rounded-full bg-primary-container text-on-primary font-body-md text-body-md shadow-sm border border-transparent">Despido</button>
+<button class="px-8 py-3 rounded-full bg-transparent text-on-surface font-body-md text-body-md border border-outline-variant hover:border-secondary transition-colors">Accidente</button>
+</div>
+</section>
+<!-- Calculator Bento Grid -->
+<section class="px-margin-mobile md:px-margin-desktop pb-[120px] max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Input Column -->
+<div class="md:col-span-7 space-y-gutter">
+<!-- Base Data Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-surface-variant relative overflow-hidden noise-bg">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary-container"></div>
+<h2 class="font-headline-sm text-headline-sm text-primary mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">work</span>
+                            Datos del Contrato
+                        </h2>
+<div class="space-y-8">
+<!-- Slider: Salario -->
+<div>
+<div class="flex justify-between items-end mb-4">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Salario Bruto Anual</label>
+<span class="font-headline-md text-headline-md text-primary">€ 32,500</span>
+</div>
+<input class="w-full appearance-none bg-surface-variant h-1 rounded-full outline-none" max="150000" min="15000" type="range" value="32500"/>
+</div>
+<!-- Slider: Antigüedad -->
+<div>
+<div class="flex justify-between items-end mb-4">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Años de Antigüedad</label>
+<span class="font-headline-md text-headline-md text-primary">8.5 <span class="font-body-md text-body-md text-on-surface-variant">años</span></span>
+</div>
+<input class="w-full appearance-none bg-surface-variant h-1 rounded-full outline-none" max="40" min="0" step="0.5" type="range" value="8.5"/>
+</div>
+<!-- Select: Tipo de Despido -->
+<div>
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-4">Tipo de Despido</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<button class="py-3 px-4 rounded-lg border-2 border-primary-container bg-surface-container-low text-primary text-left font-body-md text-body-md flex items-center justify-between">
+                                        Improcedente
+                                        <span class="material-symbols-outlined" data-weight="fill">radio_button_checked</span>
+</button>
+<button class="py-3 px-4 rounded-lg border border-outline-variant bg-transparent text-on-surface-variant text-left font-body-md text-body-md hover:border-secondary transition-colors flex items-center justify-between">
+                                        Objetivo
+                                        <span class="material-symbols-outlined">radio_button_unchecked</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Result Column -->
+<div class="md:col-span-5 relative">
+<!-- Sticky Container for Result -->
+<div class="sticky top-[120px]">
+<div class="bg-primary-container rounded-xl p-8 text-on-primary-container shadow-2xl relative overflow-hidden">
+<!-- Background accent -->
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-tertiary-fixed rounded-full opacity-10 blur-3xl"></div>
+<h3 class="font-label-caps text-label-caps uppercase tracking-wider text-inverse-primary mb-2">Estimación Legal (2026)</h3>
+<div class="font-display-lg text-display-lg text-on-primary mb-6">
+                                23.415€
+                            </div>
+<div class="w-full h-px bg-on-primary-fixed-variant/50 mb-6"></div>
+<ul class="space-y-4 mb-8">
+<li class="flex justify-between items-center font-body-sm text-body-sm border-b border-on-primary-fixed-variant/30 pb-2">
+<span class="text-tertiary-fixed-dim">Días por año</span>
+<span class="text-on-primary">33 días</span>
+</li>
+<li class="flex justify-between items-center font-body-sm text-body-sm border-b border-on-primary-fixed-variant/30 pb-2">
+<span class="text-tertiary-fixed-dim">Tope legal</span>
+<span class="text-on-primary">24 mensualidades</span>
+</li>
+<li class="flex justify-between items-center font-body-sm text-body-sm">
+<span class="text-tertiary-fixed-dim">Complejidad</span>
+<span class="text-secondary-fixed">Media</span>
+</li>
+</ul>
+<div class="bg-tertiary-container/50 rounded-lg p-6 border border-on-primary-fixed-variant">
+<p class="font-body-sm text-body-sm text-on-primary mb-4">Esta es una estimación. Asegura tu indemnización con una revisión gratuita de tu caso.</p>
+<form class="space-y-4">
+<input class="w-full bg-surface-container-lowest text-primary rounded border-none focus:ring-2 focus:ring-secondary-fixed font-body-md text-body-md px-4 py-3" placeholder="Tu teléfono" type="tel"/>
+<button class="w-full bg-secondary-fixed text-primary font-body-md text-body-md font-bold py-3 rounded-full hover:bg-secondary-container transition-colors" type="button">
+                                        Que un abogado me llame gratis
+                                    </button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shared Component -->
+<footer class="w-full pt-16 pb-8 bg-primary-container dark:bg-black border-t border-on-primary-fixed-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="font-display-lg text-headline-md text-on-primary dark:text-tertiary-fixed mb-4">
+                    Signum Abogados
+                </div>
+<p class="font-body-sm text-body-sm text-on-primary-container dark:text-tertiary-fixed-dim mb-8">
+                    © 2026 Signum Abogados Valencia. ICAV Accredited.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-2 flex flex-wrap gap-6 md:justify-end items-start">
+<a class="text-on-primary-container/70 hover:text-on-primary hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100 font-body-sm text-body-sm" href="#">Privacy Policy</a>
+<a class="text-on-primary-container/70 hover:text-on-primary hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100 font-body-sm text-body-sm" href="#">Legal Notice</a>
+<a class="text-on-primary-container/70 hover:text-on-primary hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100 font-body-sm text-body-sm" href="#">Cookies</a>
+<a class="text-on-primary-container/70 hover:text-on-primary hover:translate-x-1 transition-transform duration-200 opacity-90 hover:opacity-100 font-body-sm text-body-sm" href="#">Sitemap</a>
+</div>
+</div>
+</footer>
+</body></html>
