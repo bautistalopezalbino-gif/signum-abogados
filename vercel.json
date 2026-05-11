@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/signum_abogados_home/code.html" }
+  ]
+}
